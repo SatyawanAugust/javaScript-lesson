@@ -11,17 +11,17 @@
 <body>
 
     <script>
-        //logical operators
-        var a = 5;
-        var b = 10;
-        var c = "5";
+        //Arrays
 
-        b++;
-        var d = ((b % 5) > 0) ? "odd" : "even";
+        var myArray = ["string", 100, false]; //literal array
+        var myArray3 = [];
 
-        console.log(typeof a == "number");
-        console.log(typeof c == typeof "number");
-        console.log((d == "odd" && b > 10 && b >= (a * 2)));
+        var myArray1 = new Array("string", 100, false);
+        var myArray2 = new Array();
+
+        console.log(myArray);
+        myArray[1] = "New Value";
+        console.log(myArray);
     </script>
 </body>
 
