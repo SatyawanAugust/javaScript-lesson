@@ -13,12 +13,41 @@
     <script>
         //Arrays
 
-        var animals = ["cat", "dog", "rabbit", "bird", "fish"];
-        var randomIndex = Math.floor(Math.random() * animals.length);
-        var randomAnimal = (animals[randomIndex]);
-        var message = prompt("Which index value is " + randomAnimal);
-        var response = (message == randomIndex) ? "Correct" : "Wrong it was " + randomIndex;
-        alert(response);
+        /* var animals = ["cat", "dog", "rabbit", "bird", "fish", "zebra"];
+        console.log(animals);
+
+        animals.push("sheep"); // add item at the end of an array
+        console.log(animals);
+        //animals.pop(); // remove last item from the end of an array
+        var removePop = animals.pop(); // remove last item and save to variable
+        console.log(animals);
+
+        //animals.shift(); // remove first item
+        var removeShift = animals.shift(); // remove first item and saved
+        console.log(animals);
+
+        animals.unshift("horse"); // add first item to array
+        console.log(animals);
+        console.log("animal removed by pop is " + removePop);
+        console.log("animal removed by shift is " + removeShift);
+
+        animals.splice(2, 1); // remove from pos number of items
+        console.log(animals); */
+
+        var animals = ["cat", "dog", "rabbit", "bird", "fish", "zebra"];
+        var startVal = animals.length;
+        console.log(startVal);
+        animals[20] = "horse";
+        animals.fill("mouse", startVal, (animals.length - 1)); // fill empty value in array
+
+        /* animals.reverse(); // reverse the order of items
+        console.log(animals);
+
+        animals.sort(); // sort items by value
+        console.log(animals); */
+
+        /* animals.sort().reverse(); // sort and then reverse in oneline
+        console.log(animals); */
     </script>
 </body>
 
