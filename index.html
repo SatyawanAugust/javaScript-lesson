@@ -13,20 +13,12 @@
     <script>
         //Arrays
 
-        var task = ["take out garbage", "read a book", "write javascript", "got to work", "sleep"];
-        var progress = ["done", "in progress", "to do"];
-
-        //task[100] = "New Value"
-        task[(task.length)] = "watch TV";
-
-        console.log(task[(task.length - 1)]);
-        console.log(task);
-        /* var question1 = prompt("which task 1-" + task.length + "?");
-        var question2 = prompt("status 1=done, 2=in progress, 3=to do");
-
-        //console.log(task);
-        //console.log(progress);
-        console.log("today you will " + task[(question1 - 1)] + " status of task " + progress[(question2 - 1)]); */
+        var animals = ["cat", "dog", "rabbit", "bird", "fish"];
+        var randomIndex = Math.floor(Math.random() * animals.length);
+        var randomAnimal = (animals[randomIndex]);
+        var message = prompt("Which index value is " + randomAnimal);
+        var response = (message == randomIndex) ? "Correct" : "Wrong it was " + randomIndex;
+        alert(response);
     </script>
 </body>
 
