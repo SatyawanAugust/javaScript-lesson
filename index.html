@@ -13,41 +13,28 @@
     <script>
         //Arrays
 
-        /* var animals = ["cat", "dog", "rabbit", "bird", "fish", "zebra"];
-        console.log(animals);
+        var newHolder = ["cat", "dog", "rabbit", "bird"];
+        //var posIndex = newHolder.indexOf("cat");
 
-        animals.push("sheep"); // add item at the end of an array
-        console.log(animals);
-        //animals.pop(); // remove last item from the end of an array
-        var removePop = animals.pop(); // remove last item and save to variable
-        console.log(animals);
+        // prompt response
+        // check the value is in array
+        // reply the item exist or not
+        // solution 1
 
-        //animals.shift(); // remove first item
-        var removeShift = animals.shift(); // remove first item and saved
-        console.log(animals);
+        /* var question1 = prompt("Input an animal name?");
+        var posIndex = newHolder.indexOf(question1);
+        if (posIndex != -1) {
+            alert(newHolder[posIndex] + " is on indexOf " + posIndex)
+        } else {
+            alert("No value of " + question1 + " in array!");
+        } */
 
-        animals.unshift("horse"); // add first item to array
-        console.log(animals);
-        console.log("animal removed by pop is " + removePop);
-        console.log("animal removed by shift is " + removeShift);
+        // solution 2
+        var q = prompt("What did you want to look for?")
+        var p = newHolder.indexOf(q);
 
-        animals.splice(2, 1); // remove from pos number of items
-        console.log(animals); */
-
-        var animals = ["cat", "dog", "rabbit", "bird", "fish", "zebra"];
-        var startVal = animals.length;
-        console.log(startVal);
-        animals[20] = "horse";
-        animals.fill("mouse", startVal, (animals.length - 1)); // fill empty value in array
-
-        /* animals.reverse(); // reverse the order of items
-        console.log(animals);
-
-        animals.sort(); // sort items by value
-        console.log(animals); */
-
-        /* animals.sort().reverse(); // sort and then reverse in oneline
-        console.log(animals); */
+        var message = p > -1 ? "Found" : "Not there";
+        console.log(message);
     </script>
 </body>
 
