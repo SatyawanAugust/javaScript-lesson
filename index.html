@@ -13,28 +13,17 @@
     <script>
         //Arrays
 
-        var newHolder = ["cat", "dog", "rabbit", "bird"];
-        //var posIndex = newHolder.indexOf("cat");
+        var arr = [3, 4, 5, 77, 33, 22, 4, 1, 55, 2, "cat", "dog"];
+        arr.sort();
+        console.log(arr);
 
-        // prompt response
-        // check the value is in array
-        // reply the item exist or not
-        // solution 1
+        var q = prompt("What do you want to remove?");
+        var finder = arr.indexOf(q);
 
-        /* var question1 = prompt("Input an animal name?");
-        var posIndex = newHolder.indexOf(question1);
-        if (posIndex != -1) {
-            alert(newHolder[posIndex] + " is on indexOf " + posIndex)
-        } else {
-            alert("No value of " + question1 + " in array!");
-        } */
+        var v = (finder > -1) ? arr.splice(finder, 1) : false;
+        console.log(v);
 
-        // solution 2
-        var q = prompt("What did you want to look for?")
-        var p = newHolder.indexOf(q);
-
-        var message = p > -1 ? "Found" : "Not there";
-        console.log(message);
+        console.log(arr);
     </script>
 </body>
 
