@@ -11,14 +11,17 @@
 <body>
 
     <script>
-        //Arrays
-        // Array Loop
+        // JavaScript Object
+        var car = {
+            color: "red",
+            make: "ford",
+            doors: 5,
+            model: "mustang"
+        }; // literal
+        console.log(car);
 
-        var arr = ["cat", "dog", "fish", 4, 2, 5, 6, 6, 4];
-
-        for (var x in arr) {
-            console.log("index:[" + x + "] --> " + arr[x]);
-        }
+        var prop = prompt("what do you want to know about the car?");
+        console.log(car[prop]);
     </script>
 </body>
 
