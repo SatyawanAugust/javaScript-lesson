@@ -18,11 +18,11 @@
             doors: 5,
             model: "mustang"
         }; // literal
-        car.color = "grey";
-        car.make = "daihatsu";
-        car.doors = 5;
-        car.model = "sigra";
-        console.log(car);
+        car.driver = "Lancelot";
+        // loop object
+        for (var property in car) {
+            console.log(property + " -> " + car[property]);
+        }
     </script>
 </body>
 
