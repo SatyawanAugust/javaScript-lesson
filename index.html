@@ -11,18 +11,25 @@
 <body>
 
     <script>
-        // JavaScript Object
-        var car = {
-            color: "red",
-            make: "ford",
-            doors: 5,
-            model: "mustang"
-        }; // literal
-        car.driver = "Lancelot";
-        // loop object
-        for (var property in car) {
-            console.log(property + " -> " + car[property]);
-        }
+        // Objects and Arrays
+        var bob = {
+            age: 30,
+            hair: "brown",
+            eyes: "blue",
+            works: "developer"
+        };
+        var friends = {
+            friend1: bob,
+            friend2: {
+                age: 30,
+                hair: "black"
+            }
+        };
+
+        var friends1 = [bob, {
+            age: 30,
+            hair: "black"
+        }];
     </script>
 </body>
 
