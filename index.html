@@ -9,27 +9,17 @@
 </head>
 
 <body>
-
+    <div id="output"></div>
     <script>
-        // Objects and Arrays
-        var bob = {
-            age: 30,
-            hair: "brown",
-            eyes: "blue",
-            works: "developer"
-        };
-        var friends = {
-            friend1: bob,
-            friend2: {
-                age: 30,
-                hair: "black"
-            }
-        };
+        // Document Objects Model Basics
 
-        var friends1 = [bob, {
-            age: 30,
-            hair: "black"
-        }];
+        document.getElementById("output").innerHTML = "Welcome to my page";
+
+        /* var output = document.getElementById("output");
+        output.innerHTML = "Welcome to my page<br>Update using JavaScript"; */
+        //output.innerText = "Hello <br> World";
+
+        //console.dir(document);
     </script>
 </body>
 
